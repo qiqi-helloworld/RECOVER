@@ -2,11 +2,13 @@
 The code for the paper "An Online Method for A Class of Distributionally Robust Optimization with Non-Convex Objectives" [![pdf](https://img.shields.io/badge/Arxiv-pdf-orange.svg?style=flat)](https://arxiv.org/pdf/2006.10138.pdf)
 
 
-### Configuration
+Configuration
+---------
 pip3 install torch==1.4.0 torchvision==0.5.0 --user
 
 
-### Implementation
+Implementation
+---------
 Let \x represnets the sample. To taking the most advantage of GPU data-parallel for RECOVER implementation, with two GPUs, the first GPU stores data batch {\x_t} and second GPUs store data batch {\x_{t+1}}.
 And in our implementation, we take two steps for one u, v updates.
 Take u for example
@@ -32,6 +34,12 @@ These two steps together finish the updates of u.
 Similar updates implementation design also for v.
 
 
+
+Run
+---------
+```python
+bash run_RECOVER.sh
+```
 
 Citation
 ---------
