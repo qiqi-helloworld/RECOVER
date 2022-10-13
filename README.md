@@ -35,7 +35,7 @@ Similar updates implementation design also for v.
 
 
 
-Run
+To replicate the results:
 ---------
 ```python
 bash run_RECOVER.sh
